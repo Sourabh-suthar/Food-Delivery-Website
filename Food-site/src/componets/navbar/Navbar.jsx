@@ -13,6 +13,7 @@ const Navbar = ({setShowLogin}) => {
   
   return (
     <div className='navbar' >
+      
         <Link to='/' > <img src={assets.logo} id='logo' className='logo' /></Link>
         <ul className="navbar-menu">
             <Link to='/' onClick={()=>setmenu('Home')} className={menu==='Home'? "active":""} >Home</Link>
@@ -20,6 +21,7 @@ const Navbar = ({setShowLogin}) => {
             <a href='#app-downlond' onClick={()=>setmenu('Mobile-App')} className={menu==='Mobile-App'? "active":""} >Mobile-App</a>
             <a href='#footer' onClick={()=>setmenu('Contact us')} className={menu==='Contact us'? "active":""}>Contact us</a>
         </ul>
+      
         <div className="navbar-right">
           <SearchIcon className='searchicon'/>
           <div className="navbar-cart-icons">

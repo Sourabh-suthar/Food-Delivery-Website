@@ -1,14 +1,16 @@
 .navbar{
-    padding: 3px 15px;
+    padding: 3px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 82%;
+    width: 100%;
+    max-width: 1300px;
     background-color: white;
     position: fixed;
     top: 0;
-    left: 115px;
-    bottom: 1;
+    right: 0px;
+    /* left: 115px; */
+    /* bottom: 1; */
     z-index: 1;
 }
 #logo{
@@ -76,6 +78,9 @@
     right: -6px;
 }
 @media (max-width:1050px){
+    .navbar{
+        width: 100%;
+    }
     .navbar .logo{
         width: 140px;
     }
@@ -112,10 +117,18 @@
         font-size: 15px;
     }
 }
-@media (max-width:750px){
-   
+@media (min-width:320px)and (max-width:770px){
     .navbar-menu{
         display: none;
     }
-   
+    #logo{
+        width: 110px;
+    }
+    .navbar-right{
+        gap:7px;
+    }
+    .navbar-right Button{
+        font-size: 20%;
+    }
+     
 }

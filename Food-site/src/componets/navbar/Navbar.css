@@ -61,9 +61,18 @@
 }
 
 .navbar button{
-    border-radius: 20PX;
+    border-radius: 40PX;
+    /* width: 80px; */
+    color: white;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
     background-color: #49557e;
-    margin-left: 10px;
+    transition: 0.5s;
+}
+.navbar button:hover{
+    transform: scale(1.03);
 }
 .navbar-cart-icons{
     position: relative;
@@ -94,7 +103,7 @@
     .navbar-right img{
         width: 22px;
     }
-    .navbar-right Button{
+    .navbar button{
         padding: 8px 25px;
     }
 }
@@ -127,8 +136,9 @@
     .navbar-right{
         gap:7px;
     }
-    .navbar-right Button{
-        font-size: 20%;
+    .navbar-right button{
+        font-size: 11px;
+        padding: 4px 13px;
     }
      
 }

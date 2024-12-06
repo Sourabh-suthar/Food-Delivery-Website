@@ -28,7 +28,7 @@ const Navbar = ({setShowLogin}) => {
             <Link to='/cart' className='carticon' ><ShoppingCartIcon/> </Link>
             <div className={getTotalCartAmount()===0?"":"dot"}></div>
           </div>
-            <Button onClick={()=>setShowLogin(true)} variant="contained">Sign in</Button>
+            <button onClick={()=>setShowLogin(true)} >Sign in</button>
         </div>
     </div>
   )

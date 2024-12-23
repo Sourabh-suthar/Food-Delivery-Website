@@ -6,7 +6,7 @@ import Cart from './pages/Cart/Cart'
 import Placeorder from './pages/Placeorder/Placeorder'
 import Footer from './componets/Footer/Footer'
 import LoginPopup from './componets/LoginPopup/LoginPopup'
-
+import ScrollToTop from './ScrollToTop'
 const App = () => {
   const[showLogin,setShowLogin] = useState(false)
   return (
@@ -14,6 +14,7 @@ const App = () => {
     {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
     <div className='app'>
     <Navbar setShowLogin={setShowLogin}/>
+    <ScrollToTop/>
     <Routes>
       <Route path='/' element ={<Home/>} />
       <Route path='/cart' element={<Cart/>}/>

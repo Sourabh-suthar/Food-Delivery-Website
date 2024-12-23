@@ -4,13 +4,11 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     background-color: white;
     position: fixed;
     top: 0;
     right: 0px;
-    /* left: 115px; */
-    /* bottom: 1; */
     z-index: 1;
 }
 #logo{
@@ -49,6 +47,26 @@
 }
 .navbar-right .searchicon:hover{
     transform: scale(1.07);
+}
+.menu-icon{
+    display: none;
+}
+.icon{
+    display: none;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    color: white;
+    font-size: 10px;
+    background-color: #49557e;
+    top: 9%;
+    right: 11%;
+    padding: 10px;
+    border: 1px solid #49557e;
+    border-radius: 10px;    
 }
 
 .navbar-cart-icons .carticon{
@@ -132,6 +150,9 @@
     }
     #logo{
         width: 110px;
+    }
+    .menu-icon{
+        display: inline;
     }
     .navbar-right{
         gap:7px;

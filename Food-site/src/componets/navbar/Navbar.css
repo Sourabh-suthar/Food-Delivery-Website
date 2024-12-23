@@ -62,7 +62,7 @@
     color: white;
     font-size: 10px;
     background-color: #49557e;
-    top: 9%;
+    top:6%;
     right: 11%;
     padding: 10px;
     border: 1px solid #49557e;
@@ -153,9 +153,11 @@
     }
     .menu-icon{
         display: inline;
+        margin-right: -6px;
     }
     .navbar-right{
         gap:7px;
+        
     }
     .navbar-right button{
         font-size: 11px;
